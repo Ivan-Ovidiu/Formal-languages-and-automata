@@ -1,0 +1,34 @@
+
+#This is a nfa where every section starts with  the name of the section ":", and it ends with the word "End"
+
+
+#"Starting State"
+Starting State:
+    q0
+End
+
+#"Final States"
+Final States:
+    q2
+End
+#"States"
+States:
+    q0
+    q1
+    q2
+End
+#"Sigma"
+Sigma:
+    a
+    b
+End
+
+#"Delta"
+Delta:
+    q0, a, q1
+    q0, b, q1
+    q1, a, q2
+    q1, b, q2
+    q2, a, q2
+    q2, b, q2
+End
