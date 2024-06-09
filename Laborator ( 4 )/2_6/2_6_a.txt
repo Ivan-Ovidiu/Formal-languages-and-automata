@@ -1,0 +1,19 @@
+#Every section must start with the section name(EX: Section_Name:) ,then the variables,and end it with the word "End"
+#
+#"Variables"
+Variables:
+   A
+End
+#"Starting symbol"
+Starting Symbol:
+    A
+End
+Sigma:
+     a
+    b
+End
+#"Rules"
+Rules:
+     A -> a a A b
+    A -> a
+End
