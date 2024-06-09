@@ -1,0 +1,43 @@
+#DFA must contain all those sections, not exactly in this order
+#All the sections must end with the string "End"
+
+
+#"States" section is the section where you declare the states of the DFA
+States:
+    q0
+    q1
+    q2
+    q3
+    q4
+End
+
+#"Starting State" is the section where you declare the starting state, must only be one
+Starting State:
+    q0
+End
+
+#"Final States" is the section where you declare as many ending states as you want
+Final States:
+    q1
+    q4
+End
+
+#"Sigma" is the section where you declare each letter of you alphabet
+Sigma:
+    0
+    1
+End
+
+#"Delta" is the section where you declare each transition
+Delta:
+    q0, 0, q1
+    q0, 1, q3
+    q1, 0, q2
+    q1, 1, q2
+    q2, 0, q1
+    q2, 1, q1
+    q3, 0, q4
+    q3, 1, q4
+    q4, 0, q3
+    q4, 1, q3
+End
