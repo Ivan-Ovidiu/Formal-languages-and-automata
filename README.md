@@ -1,1 +1,1 @@
-# LFA_Laboratoare
+# LIMBAJE FORMALE SI AUTOMATE Exercitii
